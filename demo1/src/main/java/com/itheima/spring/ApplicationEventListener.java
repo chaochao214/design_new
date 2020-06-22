@@ -17,6 +17,6 @@ public class ApplicationEventListener implements ApplicationListener<ContextRefr
         System.out.println("监听到容器初始化完成！");
 
         //启动->从数据库加载对应的数据（省市区）->填充Redis
-
+        // 级联操作，预加载
     }
 }
