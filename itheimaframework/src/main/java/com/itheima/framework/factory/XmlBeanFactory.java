@@ -61,7 +61,7 @@ public class XmlBeanFactory implements BeanFactory {
      * @param uri
      * @return
      */
-    @Override
+//    @Override
     public Object getUrlBean(String uri) {
         String id = urlIdMaps.get(uri);
         if(StringUtils.isNotEmpty(id)){
@@ -75,7 +75,7 @@ public class XmlBeanFactory implements BeanFactory {
      * @param id
      * @return
      */
-    @Override
+//    @Override
     public Object getBean(String id) {
         return beans.get(id);
     }

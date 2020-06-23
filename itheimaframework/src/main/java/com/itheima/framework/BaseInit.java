@@ -33,6 +33,7 @@ public class BaseInit extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         try {
             //获取要解析的文件
+            // ?? 怎么通过接口实现方法的
             String conf = config.getInitParameter("contextLocation");
 
             //通知ParseFile加载文件
