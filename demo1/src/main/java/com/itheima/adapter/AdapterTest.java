@@ -13,5 +13,6 @@ public class AdapterTest {
         ApplicationContext act = new ClassPathXmlApplicationContext("spring-adapter.xml");
         UserCardService userCardService = (UserCardService) act.getBean("proxyBean");
         userCardService.card("王五");
+        // 源代码不太明白  视频 02:35
     }
 }

@@ -15,6 +15,9 @@ public class BeanFactoryTest {
         Resource resource = new ClassPathResource("spring-factory.xml");
         BeanFactory beanFactory = new XmlBeanFactory(resource);
 
+        //xmlBeanFactory 下怎么搜索方法？
+//       ctrl  f12 可以搜索自身方法，继承过来的方法
+
         Product car = (Product) beanFactory.getBean("car");
         car.show();
     }
