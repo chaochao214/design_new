@@ -1,7 +1,7 @@
 package com.itheima.controller;
 
 import com.itheima.domain.User;
-import com.itheima.framework.util.RequestMapping;
+import com.itheima.frameworkResource.util.RequestMapping;
 import com.itheima.service.AccountService;
 
 /*****
@@ -17,7 +17,7 @@ public class AccountController {
      */
     @RequestMapping(value = "/account/one")
     public String one(){
-        System.out.println("执行了one!");
+        System.out.println("执行了one! 重新打包过得！");
         String result = null;//accountService.one();
         return "/WEB-INF/pages/one.jsp";
     }

@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>mvc</servlet-name>
-        <servlet-class>com.itheima.framework.DispacherServlet</servlet-class>
+        <servlet-class>com.itheima.frameworkResource.DispatcherServlet</servlet-class>
         <!--配置要解析的文件对象-->
         <init-param>
             <param-name>contextLocation</param-name>
