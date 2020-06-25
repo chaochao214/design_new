@@ -10,17 +10,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo1" />
         <module name="itheimaframework" />
+        <module name="itheimaframeworkResource" />
         <module name="shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="demo1" target="1.8" />
-      <module name="itheima-framework" target="1.8" />
       <module name="itheimaframework" target="1.8" />
+      <module name="itheimaframeworkResource" target="1.8" />
       <module name="shop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo1" options="" />
+      <module name="itheimaframework" options="" />
+      <module name="itheimaframeworkResource" options="" />
+      <module name="shop" options="" />
+    </option>
   </component>
 </project>

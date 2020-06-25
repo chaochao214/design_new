@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo1/demo1.iml" filepath="$PROJECT_DIR$/demo1/demo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/design.iml" filepath="$PROJECT_DIR$/.idea/design.iml" />
       <module fileurl="file://$PROJECT_DIR$/itheimaframework/itheimaframework.iml" filepath="$PROJECT_DIR$/itheimaframework/itheimaframework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheimaframeworkResource/itheimaframeworkResource.iml" filepath="$PROJECT_DIR$/itheimaframeworkResource/itheimaframeworkResource.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop/shop.iml" filepath="$PROJECT_DIR$/shop/shop.iml" />
     </modules>
   </component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="itheimaframeworkResource:war">
+    <output-path>$PROJECT_DIR$/itheimaframeworkResource/target</output-path>
+    <root id="archive" name="webapp.war">
+      <element id="artifact" artifact-name="itheimaframeworkResource:war exploded" />
+    </root>
+  </artifact>
+</component>
