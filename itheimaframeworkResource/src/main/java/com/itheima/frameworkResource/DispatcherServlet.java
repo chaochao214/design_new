@@ -1,5 +1,8 @@
 package com.itheima.frameworkResource;
 
+import com.itheima.frameworkResource.process.View;
+import com.itheima.frameworkResource.process.ViewAdapter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,8 +24,12 @@ public class DispatcherServlet  extends  BaseInit{
         // 响应结果给用户
         try {
             Object result = invoke(uri);
-            if (result==null) {
+            if (result!=null) {
                  // 响应结果给用户
+
+                // 执行渲染
+                View view  = new ViewAdapter();
+                view.render(req,resp,result);
 
             }
 
