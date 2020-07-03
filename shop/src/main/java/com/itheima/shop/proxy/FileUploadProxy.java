@@ -31,6 +31,7 @@ public class FileUploadProxy {
      * 文件上传代理方法
      * @return
      */
+    //这特么叫代理模式？ 过于easy 了吧，只是嵌套了一层
     public String upload(byte[] buffers , String extName){
         //上传至云OSS
         for (String prefix : ossPrefix) {

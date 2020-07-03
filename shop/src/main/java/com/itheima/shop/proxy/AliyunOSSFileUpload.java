@@ -39,6 +39,8 @@ public class AliyunOSSFileUpload implements FileUpload{
      */
     @Override
     public String upload(byte[] buffers,String extName) {
+        // 这里怎么区分是 图片还是视频？ 这里只上传了视频
+
         String realName = UUID.randomUUID().toString()+"."+extName ;
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKey, accessKeySecret);

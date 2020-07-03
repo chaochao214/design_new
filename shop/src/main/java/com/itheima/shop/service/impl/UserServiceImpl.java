@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService {
         try {
             return jdbcTemplate.queryForObject("SELECT * FROM `user` WHERE username=?",new BeanPropertyRowMapper<User>(User.class),username);
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return null;
     }

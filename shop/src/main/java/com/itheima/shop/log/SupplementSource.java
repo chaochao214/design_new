@@ -15,6 +15,9 @@ public class SupplementSource extends LogComponent{
         super(username, sex, role);
     }
 
+    public SupplementSource(String username) {
+        super(username);
+    }
     /****
      * 业务逻辑，完善不同方法的日志记录
      * @param args 长度为2，第1个是方法名字，第2个是方日志信息

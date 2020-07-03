@@ -34,6 +34,7 @@ public class LogAspect {
         //获取方法名字和参数
         String methodName = joinPoint.getTarget().getClass().getName()+"."+joinPoint.getSignature().getName();
         //记录日志
+        //todo
         log.info(threadUserLog.reload(methodName,args(joinPoint.getArgs())));
     }
 

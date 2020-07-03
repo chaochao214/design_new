@@ -45,6 +45,7 @@ public class LoginController {
 
         //生成JWT令牌
         String token = JwtTokenUtil.generateTokenUser(UUID.randomUUID().toString(), userMap, 36000000L);
+        System.out.println(token);
         return token;
     }
 }
