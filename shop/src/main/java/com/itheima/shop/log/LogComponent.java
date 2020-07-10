@@ -45,4 +45,9 @@ public abstract class LogComponent {
         this.sex = sex;
         this.role = role;
     }
+
+    public LogComponent(String username) {
+    }
+
+
 }

@@ -43,9 +43,9 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
                 Map<String, Object> tokenMap = JwtTokenUtil.parseToken(authorization);
                 //将用户数据存入到ThreadLocal中
                 LogComponent logComponent = new SupplementSource(
-                        tokenMap.get("username").toString(),
+                        tokenMap.get("username").toString()/*,
                         tokenMap.get("sex").toString(),
-                        tokenMap.get("role").toString());
+                        tokenMap.get("role").toString()*/);
                 //添加当前线程用户信息记录
                 threadUserLog.add(logComponent);
                 return true;

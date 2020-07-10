@@ -66,7 +66,7 @@ public class OrderServiceImpl implements OrderService {
         //①设置用户名-从共享对象中获取
         order.setUsername(threadUserLog.get().getUsername());
 
-        //装饰者模式计算金额
+       /* //装饰者模式计算金额
         //①订单金额计算
         Integer money = orderPayMoneyOperation.operation(order);
         order.setMoney(money);
@@ -79,6 +79,9 @@ public class OrderServiceImpl implements OrderService {
 
         //修改库存
         int mCount = itemService.modify(order.getNum(), order.getItemId());
+        */
+
+
         //添加订单
         int addCount = orderDao.add(order);
         return addCount;

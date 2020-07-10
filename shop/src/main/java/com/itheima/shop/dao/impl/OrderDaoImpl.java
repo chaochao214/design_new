@@ -22,7 +22,8 @@ public class OrderDaoImpl implements OrderDao {
      */
     @Override
     public int add(Order order){
-        return jdbcTemplate.update("INSERT INTO order_info(id,money,status,item_id,num,username,paymoney,couponsId) values(?,?,?,?,?,?,?,?)",order.getId(),order.getMoney(),order.getStatus(),order.getItemId(),order.getNum(),order.getUsername(),order.getPaymoney(),order.getCouponsId());
+//        return jdbcTemplate.update("INSERT INTO order_info(id,money,status,item_id,num,username,paymoney,couponsId) values(?,?,?,?,?,?,?,?)",order.getId(),order.getMoney(),order.getStatus(),order.getItemId(),order.getNum(),order.getUsername(),order.getPaymoney(),order.getCouponsId());
+        return jdbcTemplate.update("INSERT INTO order_info(id,money) values(?,?)",order.getId(),order.getMoney()) ;
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.itheima.framework.factory;
 
 /*****
  * @Author: http://www.itheima.com
- * @Description: com.itheima.framework.factory.BeanFactory
+ * @Description: com.itheima.framework.factory.Factory
  ****/
 public interface BeanFactory {
 
