@@ -20,7 +20,7 @@ spring:
     name: seckill-goods
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://twc:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
   servlet:
@@ -29,4 +29,4 @@ spring:
 
 #支付通道列表
 pay:
-  paymap: {"1":"weixinPay","2":"aliPay"}
+  paymap: {"1":"weixinPay","2":"aliPa"}
